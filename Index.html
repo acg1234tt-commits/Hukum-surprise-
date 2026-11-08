@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Diwali Rabia ☺️</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a0033, #33001a, #000000);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 500px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+            overflow: hidden;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .slide {
+            display: none;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        .active-slide {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .slide h2 {
+            color: #ffd700;
+            font-size: 26px;
+            margin-bottom: 15px;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+
+        .slide p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #f1f1f1;
+            margin-bottom: 20px;
+            min-height: 90px;
+        }
+
+        .image-box {
+            width: 100%;
+            max-height: 320px;
+            overflow: hidden;
+            border-radius: 12px;
+            border: 2px solid #ffd700;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: auto;
+            max-height: 320px;
+            object-fit: cover;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            gap: 10px;
+        }
+
+        button {
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(255, 65, 108, 0.4);
+            transition: 0.3s;
+            flex: 1;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 7px 20px rgba(255, 65, 108, 0.6);
+        }
+
+        button.secondary {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .indicators {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .dot {
+            height: 8px;
+            width: 8px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .dot.active {
+            background-color: #ffd700;
+            width: 20px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+    <!-- Slide 1 -->
+    <div class="slide active-slide">
+        <h2>✨ Diwali Special ✨</h2>
+        <p>Rabia ☺️, is pyare se tyohar par tumhare liye kuch khaas dil ki baatein kehni thi...</p>
+        <div class="indicators-placeholder"></div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+        <h2>🪔 Roshni Ka Tyohar 🪔</h2>
+        <p>Jaise diye andhere ko door karte hain, waise hi tumhari muskaan meri zindagi mein roshni le aati hai.</p>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide">
+        <h2>💖 Dil Ki Baat 💖</h2>
+        <p>Jab bhi tumse baat hoti hai ya tumhe dekhta hoon, dil ko ek alag hi sukoon milta hai.</p>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide">
+        <h2>🌟 Khubsurat Ehsaas 🌟</h2>
+        <p>Yeh Diwali aur bhi khaas ban jaati hai jab tumhare hone ka ehsaas paas hota hai.</p>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide">
+        <h2>🎇 Khushiyan 🎇</h2>
+        <p>Bhagwan se yahi dua hai ki is Diwali tumhare saare sapne pure hon aur chehre par hamesha hasi rahe.</p>
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="slide">
+        <h2>🌹 Pyari Yaadein 🌹</h2>
+        <p>Har lamha jo tumhare sath guzarta hai, woh mere liye sabse keemti ban jata hai.</p>
+    </div>
+
+    <!-- Slide 7 -->
+    <div class="slide">
+        <h2>✨ Har Pal Dua ✨</h2>
+        <p>Tumhari khushi hi meri sabse badi khushi hai, Rabia. Hamesha haste raho.</p>
+    </div>
+
+    <!-- Slide 8 -->
+    <div class="slide">
+        <h2>💫 Ek Chhota Sa Tohfa 💫</h2>
+        <p>Yeh chhota sa gesture sirf tumhare liye hai, umeed hai tumhe pasand aayega.</p>
+    </div>
+
+    <!-- Slide 9 -->
+    <div class="slide">
+        <h2>🎉 Happy Diwali 🎉</h2>
+        <p>Wishing you a very Happy Diwali, Rabia! Tumhari zindagi roshni aur pyaar se bhar jaye.</p>
+    </div>
+
+    <!-- Slide 10 (Last Slide with Embedded Image) -->
+    <div class="slide">
+        <h2>❤️ Happy Diwali Rabia ☺️ ❤️</h2>
+        <div class="image-box">
+            <!-- Embedded Image Base64 -->
+            <img src="data:image/png;base64,REPLACE_WITH_BASE64_IMAGE" alt="Rabia Special">
+        </div>
+        <p>Yeh pal, yeh lamha aur yeh pyaar hamesha aisa hi rahe. Happy Diwali once again!</p>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="btn-container">
+        <button id="prevBtn" class="secondary" onclick="changeSlide(-1)">Peeche</button>
+        <button id="nextBtn" onclick="changeSlide(1)">Aage Badhein</button>
+    </div>
+
+    <!-- Dots -->
+    <div class="indicators" id="dotsContainer">
+        <!-- Generated via JS -->
+    </div>
+
+</div>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+
+    // Create dots dynamically
+    const dotsContainer = document.getElementById('dotsContainer');
+    for (let i = 0; i < totalSlides; i++) {
+        const dot = document.createElement('span');
+        dot.classList.add('dot');
+        if (i === 0) dot.classList.add('active');
+        dotsContainer.appendChild(dot);
+    }
+    const dots = document.querySelectorAll('.dot');
+
+    function showSlide(n) {
+        slides[currentSlide].classList.remove('active-slide');
+        dots[currentSlide].classList.remove('active');
+        
+        currentSlide = (n + totalSlides) % totalSlides;
+        
+        slides[currentSlide].classList.add('active-slide');
+        dots[currentSlide].classList.add('active');
+
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        
+        if (currentSlide === totalSlides - 1) {
+            nextBtn.innerHTML = "Shuruat Karein 🪔";
+        } else {
+            nextBtn.innerHTML = "Aage Badhein";
+        }
+    }
+
+    function changeSlide(direction) {
+        if (currentSlide === totalSlides - 1 && direction === 1) {
+            currentSlide = 0; // Loop back to start if needed
+            showSlide(currentSlide);
+        } else {
+            showSlide(currentSlide + 1);
+        }
+    }
+
+    // Allow clicking prev button properly
+    document.getElementById('prevBtn').addEventListener('click', function() {
+        if (currentSlide > 0) {
+            showSlide(currentSlide - 1);
+        } else {
+            showSlide(totalSlides - 1);
+        }
+    });
+</script>
+
+</body>
+</html>
